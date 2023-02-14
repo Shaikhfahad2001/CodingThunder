@@ -1,0 +1,26 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri":"mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "fb_url": "https://facebook.com/muhammed.shaikh.18",
+    "link_url": "https://linkedin.com/in/fahad-shaikh-85748b241",
+    "gh_url": "https://github.com/shaikhfahad2001",
+    "insta_url": "https://instagram.com/shaikhfahad____",
+    "blog_name": "CODING THUNDER",
+    "tag_line": "A blog liked by programmers",
+    "gmail-user": "fs087030@gmail.com",
+    "gmail-password": "",
+    "about_text": "Welcome to the blog. This blog is on programming in which you will learn how programming and coding building technologies and making the world a better place to live.This blog will provide great knowlege and Information of IT Industries which is taking the technologies on higher level.This  blog will surely give you dynamic  experience.In this blog we will be going to explore many things, so stay connected with us. Hope you will like this Informative and enjoy it.",
+    "no_of_posts": 3,
+    "login_image": "favicon2.svg",
+    "admin_user": "fahad",
+    "admin_password": "shaikhfahad",
+    "upload_location": "C:\\Users\\FAHAD\\Pycharmprojects\\Flask.tut\\static\\img"
+  }
+
+
+
+
+}

@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/post-bg.jpg')   }}   ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>ADMIN PANEL</h1>
+                            <span class="subheading">Manage your post and change them</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+                     </div>
+
+                    <h2>BASIC ACTION </h2>
+                   
+        <a href="/edit/0">  <button class ="btn btn-primary">ADD NEW POSTS</button></a>
+
+    </div>
+        
+                      
+                <hr>
+                
+        
+
+                    <!-- Post preview-->
+                    <h2>UPLOAD A FILE</h2>
+                    
+           <form action ="/uploader" method="post" enctype='multipart/form-data'>
+        <input type="file" name="file1">
+
+        <p align="left">
+        <button class ="btn btn-primary" type="Submit">SUBMIT</button>
+    </form></p>
+
+
+
+            <hr>
+
+      <h2>EDIT POSTS</h2>
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">SNO</th>
+            <th scope="col">TITLE</th>
+            <th scope="col">DATE</th>
+            <th scope="col">EDIT</th>
+            <th scope="col">DELETE</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+
+
+
+            {% for post in posts %}
+          <tr>
+            <td>{{post.sno}} </td>
+            <td>{{post.title}} </td>
+            <td>{{post.date }}</t> </td>
+            <td><a href="/edit/{{post.sno}}"><button class ="btn btn-primary">EDIT</button></td>
+            <td><a href="/delete/{{post.sno}}"><button class ="btn btn-primary">DELETE</button></a></td>
+         </tr>
+
+        {% endfor %}
+
+        </tbody>
+      </table>
+
+      <p align="center">
+        <a href="/logout">  <button class ="btn btn-primary"> LOGOUT</button></a></p>
+             
+          </div>
+            </div>
+        </div>
+
+       {% endblock %}
